@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="10dp"
+            android:background="#a4c747"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#ffff"
+                android:fontFamily="sans-serif-black"
+                android:text="PT. Hallo Indonesia Teknologi"
+                />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:padding="10dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="right"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="5dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#922C2C2C"
+                    app:sliderIndicatorUnselectedColor="#C8FFFFFF"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="false" />
+
+                <TextView
+                    android:id="@+id/title_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#373737"
+                    android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Macbook Air M1 128 GB, Intel COre I3 Sangat Cepat"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/price_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 12.000.000"
+                    />
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_height="wrap_content"
+                    android:text="Stock : 2"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripsi"
+                        android:textSize="15dp"
+                        android:textColor="#2B2A2A"
+                        android:fontFamily="sans-serif"
+                        />
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/divider"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#535151"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginRight="16dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia arcu et dictum eleifend. Vivamus ac auctor risus. Sed dapibus nec lectus at condimentum. Mauris laoreet sed dui pellentesque scelerisque. Phasellus tempus tempus dolor, sit amet tempor orci posuere eu. Pellentesque vitae metus non diam ultricies rutrum ac eget erat. Fusce ut tortor vel risus pulvinar sodales sit amet vel orci. Integer pulvinar ex enim, vel luctus arcu feugiat in. Praesent blandit consequat massa, vitae laoreet elit tincidunt molestie. Mauris dignissim odio vel iaculis posuere. Sed non odio sem. Proin elementum turpis non mi aliquet fringilla."
+                    />
+
+                <TextView
+                    android:id="@+id/link"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2341E6"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="https://www.tutorialkart.com/kotlin-android/android-open-url-in-browser-activity/"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+</LinearLayout>

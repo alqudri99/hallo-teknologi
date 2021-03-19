@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/kantor"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20dp"
+        android:textColor="#2B2929"
+        android:gravity="center_vertical"
+        android:text="Banda Aceh - Agus Setiadi (0852 7731 4006) JL Tgk. Nyak Arif, Banda Aceh"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/divider"
+        />
+
+    <ImageView
+        android:id="@+id/div"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+</LinearLayout>
